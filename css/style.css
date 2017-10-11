@@ -1,0 +1,395 @@
+/* -------------------------------COLOURS
+    blue: #0C36B6; rgb(12,54,182)
+    grey: #F7F7F7; rgb(247,247,247)
+    darkgrey: #333; rgb(51,51,51)
+*/
+
+
+
+/*-----------------------------------GENERAL STLING*/
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #333;
+    margin: 0;
+    
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+div#home{
+    background-image: url("../img/headerImg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat !important;
+    background-position: center center;
+    height: 650px;
+    width: 100%;
+    padding: 0;
+     position: relative;
+  
+}
+
+#arrow{
+   
+}
+
+i.fa.fa-arrow-circle-down{
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    color: #0C36B6;
+    font-size: 110%;
+    animation: bounce 1s 5 forwards normal cubic-bezier(0.22, 0.61, 0.36, 1);
+    -webkit-animation: bounce 1s 5 forwards normal cubic-bezier(0.22, 0.61, 0.36, 1);
+    -moz-animation: bounce 1s 5 forwards normal cubic-bezier(0.22, 0.61, 0.36, 1);
+        }
+
+
+
+h3{
+    color: black; 
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+h2{
+    color: #0C36B6; 
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h5{
+    color: #0C36B6;  
+}
+
+
+
+/*-------------------------------------------HEADER*/
+
+header{
+    margin-bottom: 150px;
+}
+
+/*-----------------------LOGO*/
+div.logo{
+    position: absolute;
+    top: 12px;
+    left: 20px;
+}
+
+div.logo > img{
+    width: 30%;
+    padding: 5px;
+}
+
+
+/*-----------------------IMG*/
+div.headerImage{
+    
+}
+
+div.headerImage > img{
+    width: 100%; 
+    
+}
+
+/*-----------------------NAV*/
+nav{
+    overflow: hidden;
+    padding-top: 20px;
+    padding-right: 20px; 
+}
+
+ul.navElements{
+   float: right;
+    padding: 0 0 20px 0;
+    border-bottom: solid 1px #0C36B6;
+}
+
+.listElement{
+    float: left;
+    list-style: none;
+    padding-right: 20px;
+}
+
+.listElement:last-child{
+    padding-right: 0;
+}
+
+.listElement > a{
+    text-decoration: none;
+    color: #0C36B6;
+}
+
+.listElement > a.active{
+    font-weight: bolder;
+}
+
+.listElement > a:hover{
+    font-weight: bold; 
+    transition: font-weight 0.3s ease-in;
+    -webkit-transition: font-weight 0.3s ease-in;
+    -moz-transition: font-weight 0.3s ease-in;
+}
+
+
+/*---------------------------------------------MAIN*/
+main{
+    width: 100%;
+    overflow: hidden;
+}
+/*--------------------------------HOME*/
+#welcome{
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    background-color: #F7F7F7;
+}
+
+div.welcomeText{
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 80px;
+}
+
+
+/*--------------------------------ABOUT*/
+
+div.contentContainer{
+    width: 100%; 
+    margin: 150px 0;
+    overflow: hidden;
+}
+div.aboutImg, div.aboutText{
+    padding: 10px;
+    box-sizing: border-box;
+    width: 45%;
+    float: left;
+}
+
+div.aboutImg{
+    padding-left: 20px;
+    margin-right: 0 !important;
+}
+
+div.aboutText{
+}
+
+div.aboutImg > img{
+    width: 80%; 
+    margin: 0 auto;
+}
+
+
+
+/*--------------------------------BROWSE*/
+
+/*-----------------------browseForm*/
+div.browseFormContainer, div.listContainer{
+    width: 50% !important;
+    padding: 0px 0px !important;
+    margin: 50px auto !important;
+    overflow: hidden !important;
+    /*float: left !important;*/
+    box-sizing: border-box !important;
+}
+
+form{
+    color: #0C36B6;
+    margin-top: 20px;
+}
+
+div.formContainer > form >input, div.browseFormContainer > form >input, input.inputForm{
+    width: 300px;
+    height: 20px;
+    margin: 5px 0 20px 0;
+    color: #333;
+    font-weight: 300;
+    font-style: italic;
+    border:none;
+    border-bottom: 2px solid #0C36B6 !important;
+}
+
+div.formContainer > form >textarea, div.browseFormContainer > form > textarea {
+    width: 100%;
+    margin: 5px 0 20px 0;
+    color: #333;
+    font-weight: 300;
+    font-style: italic;
+    border:none;
+    border-bottom: 2px solid #0C36B6;    
+}
+
+
+input.submit{
+    width: 100px !important;
+    height: 25px !important;
+    border-radius: 3px;
+    background: #0C36B6;
+    color: white !important;
+    font-style: normal !important;
+    border: none;
+    float: right;
+}
+
+input.login{
+     width: 100px !important;
+    height: 25px !important;
+    border-radius: 3px;
+    background: #0C36B6;
+    color: white !important;
+    font-style: normal !important;
+    border: none;
+}
+
+input.submit:hover{
+    background: #F7F7F7;
+    color: #0C36B6 !important;
+    font-weight: 400;
+    border: solid 1px #0C36B6;
+}
+
+
+table{
+    background-color: #fff !important;
+}
+
+/*-----------------------reserveList*/
+
+form.reserve{
+    margin-top: 50px;
+}
+
+
+
+ul.reserveList{
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    padding-right: 80px;
+}
+
+ul.reserveList>p{
+    color: #0C36B6 !important;
+    padding-bottom: 20px;
+}
+
+
+ul.reserveList>li{
+    overflow: hidden;
+    padding: 10px 15px 10px 0;
+    border-top: solid 0.5px rgba(51,51,51,0.3);
+}
+ul.reserveList>li:nth-child(2){
+    border-top: none;
+}
+
+ul.reserveList>li>span{
+    float: left;
+}
+
+ul.reserveList>li>form.reserve{
+    float: right;
+}
+input.reserveBtn{
+    border-radius: 40px;
+    width: 20px;
+    border: solid 1px rgba(51,51,51,0.5);
+    background: none;
+    position: relative;
+}
+
+
+input.reserveBtn:after{
+    content:"+" !important;
+    position: absolute;
+    margin: 0 auto;
+    font-size: 20px; 
+    text-align: center;
+    color: rgba(51,51,51,0.5);
+}
+
+/*--------------------------------CONTACT*/
+
+/*-----------------------contactForm*/
+div.formContainer{
+    padding: 50px 350px;
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+
+/*--------------------------------MYBOOKS*/
+
+/*-----------------------returncontainer*/
+
+.myListContainer{
+    width: 500px;
+    padding: 20px;
+    margin: 150px auto 150px auto !important; 
+    box-sizing: border-box;
+    border-left: solid 1px #0C36B6; 
+}
+
+
+/*--------------------------------LOGIN*/
+
+/*-----------------------fileupload*/
+.galleryImg{
+    float: left;
+    width: 200px;
+    padding-right: 20px;
+}
+
+
+/*--------------------------------FOOTER*/
+
+footer{
+    height: 100px;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    background: rgba(12,54,182,0.5);
+    bottom: 0;
+    overflow: hidden;
+    margin-top: 150px;
+}
+
+
+/*-----------------------socialmedia*/
+.socialmedia > ul.icons{
+    overflow: hidden;
+    list-style: none;
+}
+
+div.iconcontainer{
+    margin: 24px 24px 0 0;
+}
+
+i.fa.fa-facebook-square, i.fa.fa-instagram, i.fa.fa-twitter-square{
+    padding-right: 20px;
+    font-size: 200%;
+    color: white;
+    float: right;
+}
+
+
+/*-----------------------date*/
+
+.date{
+    color: white;
+    font-size: 18px;
+    float: left;
+    margin: 32px 0 0 24px;
+}
+
